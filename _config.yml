@@ -4,8 +4,8 @@ email: andymtruman@gmail.com
 description: "An engineers view on DevSecOps and security culture."
 baseurl: ""
 url: "https://andymtruman.github.io"
-title_description: "The "
-title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
+title_description: "An engineers view on DevSecOps and security culture."
+title_image: _data/greyscale.png
 google_analytics: ""
 disqus_account: 
 github_repository: https://github.com/andymtruman
