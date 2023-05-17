@@ -5,7 +5,7 @@ description: "An engineers view on DevSecOps and security culture."
 baseurl: ""
 url: "https://andymtruman.github.io"
 title_description: "An engineers view on DevSecOps and security culture."
-title_image: _data/greyscale.png
+title_image: "assets/greyscale.png"
 google_analytics: ""
 disqus_account: 
 github_repository: https://github.com/andymtruman
