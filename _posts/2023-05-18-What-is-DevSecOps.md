@@ -31,11 +31,11 @@ However, Developers and Operations are sworn enemies, so this hasn't worked. Ins
 
 DevOps should be a cross functional unit consisting of a mixture of Ops and Dev specialists, working towards a common goal, following the Spotify guild model...
 
-![](../assets/DSO1.jpg)
+![](../../../assets/DSO1.jpg)
 
 Security slots into this nicely.
 
-![](../assets/DSO2.jpg)
+![](../../../assets/DSO2.jpg)
 
 
 To Summarise, DevSecOps is a cohesive initiative to bring a security layer to the DevOps process. Heed my warnings newbie, you will not get far in the modern world of security driven DevOps without soft skills, and you will find your journey worryingly short if you don't have patience (and/or healthy coping mechanisms like punch-dancing out your rage in a wooded glen).
