@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="ribbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef1f5"/>
+      <stop offset="100%" stop-color="#8b93a1"/>
+    </linearGradient>
+    <linearGradient id="lock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3fc9b4"/>
+      <stop offset="100%" stop-color="#0e8a78"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="32%" cy="26%" r="90%">
+      <stop offset="0%" stop-color="#1b2226"/>
+      <stop offset="100%" stop-color="#0d1113"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 100% Full Canvas Solid Background -->
+  <rect x="0" y="0" width="300" height="300" fill="url(#bg)"/>
+
+  <!-- Shield scaled & centered in 300x300 box: Top Y=42, Bottom Y=257, Height=216px -->
+  <g transform="translate(0, 0)">
+    <path d="M150,42 L232,73 L232,136 C232,197 193,235 150,257 C107,235 68,197 68,136 L68,73 Z"
+          fill="url(#lock)" stroke="url(#ribbon)" stroke-width="4.5"/>
+    <text x="124.5" y="184" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="135" fill="url(#ribbon)">U</text>
+    <text x="175.5" y="184" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="135" fill="#0d1113">S</text>
+  </g>
+</svg>

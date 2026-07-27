@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200">
+  <defs>
+    <linearGradient id="ribbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef1f5"/>
+      <stop offset="100%" stop-color="#8b93a1"/>
+    </linearGradient>
+    <linearGradient id="lock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3fc9b4"/>
+      <stop offset="100%" stop-color="#0e8a78"/>
+    </linearGradient>
+  </defs>
+
+  <!-- mark: shield with interlocked "US" -->
+  <g>
+    <path d="M100,20 L155,41 L155,83 C155,123 129,148 100,161 C71,148 45,123 45,83 L45,41 Z"
+          fill="url(#lock)" stroke="url(#ribbon)" stroke-width="3"/>
+    <text x="83" y="113" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="90" fill="url(#ribbon)">U</text>
+    <text x="117" y="113" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="90" fill="#0d1113">S</text>
+  </g>
+
+  <!-- wordmark -->
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="200" y="103" font-size="52" letter-spacing="1" fill="#eef1f5">UNBLOCKING</text>
+    <text x="200" y="150" font-size="52" letter-spacing="1" fill="#eef1f5">SECURITY</text>
+  </g>
+  <text x="201" y="176" font-family="Arial, Helvetica, sans-serif" font-weight="600"
+        font-size="17" letter-spacing="3" fill="#3fc9b4">DEVSECOPS &#183; APPSEC &#183; CLOUD SECURITY</text>
+</svg>

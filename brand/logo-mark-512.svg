@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="ribbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef1f5"/>
+      <stop offset="100%" stop-color="#8b93a1"/>
+    </linearGradient>
+    <linearGradient id="lock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3fc9b4"/>
+      <stop offset="100%" stop-color="#0e8a78"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="32%" cy="26%" r="90%">
+      <stop offset="0%" stop-color="#1b2226"/>
+      <stop offset="100%" stop-color="#0d1113"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="512" height="512" fill="url(#bg)"/>
+
+  <g transform="translate(0, 0)">
+    <path d="M256,70 L396,124 L396,232 C396,336 329,401 256,439 C183,401 116,336 116,232 L116,124 Z"
+          fill="url(#lock)" stroke="url(#ribbon)" stroke-width="7.5"/>
+    <text x="212.5" y="314" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="230" fill="url(#ribbon)">U</text>
+    <text x="299.5" y="314" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="230" fill="#0d1113">S</text>
+  </g>
+</svg>
