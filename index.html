@@ -867,7 +867,6 @@
       <div class="navlinks">
         <a href="#services">Services</a>
         <a href="#case-studies">Impact</a>
-        <a href="#pipeline-spec">Pipeline</a>
         <a href="#approach">Approach</a>
         <a href="#engage">Engagement</a>
       </div>
@@ -1087,59 +1086,6 @@
           </div>
           <div class="outcome">✓ Enabled rapid innovation without exposing internal network assets</div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="pipeline-spec">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Production Blueprint</p>
-        <h2>Shift-left pipeline security spec</h2>
-        <p>An example of automated security gates wired directly into CI/CD pipelines without blocking developer
-          velocity.</p>
-      </div>
-      <div class="code-window">
-        <div class="code-header">
-          <div class="dots"><span class="dot-c"></span><span class="dot-c"></span><span class="dot-c"></span></div>
-          <span>.github/workflows/devsecops-gate.yml</span>
-          <span style="color:var(--accent-2)">YAML</span>
-        </div>
-        <pre class="code-body"><code><span class="k">name:</span> <span class="s">DevSecOps Automated Pipeline Security Gate</span>
-<span class="k">on:</span>
-  <span class="k">pull_request:</span>
-    <span class="k">branches:</span> [<span class="s">main</span>, <span class="s">release/*</span>]
-
-<span class="k">jobs:</span>
-  <span class="k">security-scan:</span>
-    <span class="k">name:</span> <span class="s">Security Audit &amp; Policy Enforcement</span>
-    <span class="k">runs-on:</span> <span class="s">ubuntu-latest</span>
-    <span class="k">steps:</span>
-      - <span class="k">name:</span> <span class="s">Checkout Code</span>
-        <span class="k">uses:</span> <span class="s">actions/checkout@v4</span>
-
-      - <span class="k">name:</span> <span class="s">1. Secrets Detection (GitLeaks)</span>
-        <span class="k">uses:</span> <span class="s">gitleaks/gitleaks-action@v2</span>
-        <span class="k">env:</span>
-          <span class="k">GITHUB_TOKEN:</span> <span class="s">${{ secrets.GITHUB_TOKEN }}</span>
-
-      - <span class="k">name:</span> <span class="s">2. Infrastructure as Code Scan (Checkov)</span>
-        <span class="k">uses:</span> <span class="s">bridgecrewio/checkov-action@master</span>
-        <span class="k">with:</span>
-          <span class="k">framework:</span> <span class="s">terraform</span>
-          <span class="k">soft_fail:</span> <span class="s">false</span> <span class="c"># Hard fail on high/critical severity misconfigurations</span>
-
-      - <span class="k">name:</span> <span class="s">3. Software Composition Analysis (Snyk SCA)</span>
-        <span class="k">uses:</span> <span class="s">snyk/actions/node@master</span>
-        <span class="k">env:</span>
-          <span class="k">SNYK_TOKEN:</span> <span class="s">${{ secrets.SNYK_TOKEN }}</span>
-
-      - <span class="k">name:</span> <span class="s">4. Container Vulnerability Scan (Trivy)</span>
-        <span class="k">uses:</span> <span class="s">aquasecurity/trivy-action@master</span>
-        <span class="k">with:</span>
-          <span class="k">image-ref:</span> <span class="s">'app:${{ github.sha }}'</span>
-          <span class="k">exit-code:</span> <span class="s">'1'</span>
-          <span class="k">severity:</span> <span class="s">'CRITICAL,HIGH'</span></code></pre>
       </div>
     </div>
   </section>
